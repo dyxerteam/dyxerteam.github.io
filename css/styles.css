@@ -1,0 +1,45 @@
+.esp-m{
+	padding-top:50px;
+	padding-bottom:50px;
+}
+.esp-g{
+	padding-top:100px;
+	padding-bottom:100px;
+}
+.esp-j{
+	padding-top:120px;
+	padding-bottom:120px;
+}
+
+/* banner */
+
+.banner{
+	height:auto;
+	width:100%;
+	background:#096;
+}
+
+.banner h1{
+	text-align:center;
+}
+
+
+/* contenedores  */
+
+.contenido{
+	width:100%;
+	height:auto;
+}
+
+.q-es{
+	background:#0C6;
+}
+
+
+.unete{
+	background: url(../images/wall.jpg) no-repeat center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
