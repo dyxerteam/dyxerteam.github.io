@@ -23,7 +23,15 @@
 
 
 	<!-- notificaciones -->
-
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "37c1866f-f21a-4cd0-aa8a-ed4fa922396c",
+    });
+  });
+</script>
 
   </head>
   <body>
@@ -40,6 +48,11 @@
                     <p>Nos gusta crear contenido :)</p>
 
                       <i class="fab fa-youtube"></i>
+
+<div class='onesignal-customlink-container'></div>
+
+
+
             </div>
         </div>
     </section>
