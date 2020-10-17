@@ -35,9 +35,15 @@
 
 
 <style>
-    		
-    		.state-subscribed{
-    			background: #f40c48 !important;
+    		.onesignal-customlink-subscribe.button {
+			    box-shadow: none !imporant;
+			    color: transparent !important;
+			}
+			.onesignal-customlink-subscribe.button:hover {
+			    box-shadow: none !imporant;
+			}
+	    	.state-subscribed{
+    			background: transparent !important;
 				height: 2.5em;
 				width: 2.5em;
 				border-radius: 50px !important;
@@ -50,8 +56,8 @@
     		}
 
     		.state-subscribed::before{
-    			content: "\f1f6";
-				color: white;
+    			content: "\f0f3";
+				color: #00e676;
 				position: absolute;
 				font-family: "Font Awesome 5 Free";
 				text-align: center;
@@ -59,7 +65,7 @@
     		}  
 
     		.state-unsubscribed{
-    			background: #00e676 !important;
+    			background: transparent !important;
 				height: 2.5em;
 				width: 2.5em;
 				border-radius: 50px !important;
@@ -72,12 +78,13 @@
     		}
 
     		.state-unsubscribed::before{
-    			content: "\f0f3";
-				color: white;
+    			
+    			content: "\f1f6";
+				color: #f40c48;
 				position: absolute;
 				font-family: "Font Awesome 5 Free";
 				text-align: center;
-				font-size: 1.5em;	
+				font-size: 1.5em !important;	
     		}
 
 
