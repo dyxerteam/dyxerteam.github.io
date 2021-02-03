@@ -1,45 +1,186 @@
-.esp-m{
-	padding-top:50px;
-	padding-bottom:50px;
+
+
+
+@font-face{
+	font-family: 'agi';
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/EmpireStraight.otf");
 }
-.esp-g{
-	padding-top:100px;
-	padding-bottom:100px;
+@font-face{
+	font-family: 'betas';
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/Outrunfuture.otf");
 }
-.esp-j{
-	padding-top:120px;
-	padding-bottom:120px;
+@font-face{
+	font-family: 'dyxer';
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/Cyberfunk.ttf");
+}
+@font-face{
+	font-family: 'team';
+	font-style: normal;
+	font-weight: bold;
+	src: url("../fonts/AIRBORNEGP.ttf");
 }
 
-/* banner */
 
+
+body{
+	background-color: #000b11;
+	font-family: 'Raleway', sans-serif;
+}
 .banner{
-	height:auto;
-	width:100%;
-	background:#fff;
+	width: 100%;
+	height: 100vh;
+	background: url(../images/ban.jpg) no-repeat center 40%;
+	background-size: cover;
+	display: flex;
+	align-items: flex-end;
+	align-content: center;
+	text-align: center;
+}
+.banner:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+	
+	background: rgba(0,10,15,0.46);
+background: -moz-radial-gradient(center, ellipse cover, rgba(0,10,15,0.46) 28%, rgba(0,10,15,0.46) 31%, rgba(0,10,15,0.46) 35%, rgba(0,10,15,0.46) 36%, rgba(0,10,15,0.54) 42%, rgba(0,10,15,0.67) 51%, rgba(0,10,15,0.77) 59%, rgba(0,10,15,0.8) 61%, rgba(0,10,15,0.98) 74%, rgba(0,10,15,0.98) 79%, rgba(0,10,15,0.98) 95%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(28%, rgba(0,10,15,0.46)), color-stop(31%, rgba(0,10,15,0.46)), color-stop(35%, rgba(0,10,15,0.46)), color-stop(36%, rgba(0,10,15,0.46)), color-stop(42%, rgba(0,10,15,0.54)), color-stop(51%, rgba(0,10,15,0.67)), color-stop(59%, rgba(0,10,15,0.77)), color-stop(61%, rgba(0,10,15,0.8)), color-stop(74%, rgba(0,10,15,0.98)), color-stop(79%, rgba(0,10,15,0.98)), color-stop(95%, rgba(0,10,15,0.98)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(0,10,15,0.46) 28%, rgba(0,10,15,0.46) 31%, rgba(0,10,15,0.46) 35%, rgba(0,10,15,0.46) 36%, rgba(0,10,15,0.54) 42%, rgba(0,10,15,0.67) 51%, rgba(0,10,15,0.77) 59%, rgba(0,10,15,0.8) 61%, rgba(0,10,15,0.98) 74%, rgba(0,10,15,0.98) 79%, rgba(0,10,15,0.98) 95%);
+background: -o-radial-gradient(center, ellipse cover, rgba(0,10,15,0.46) 28%, rgba(0,10,15,0.46) 31%, rgba(0,10,15,0.46) 35%, rgba(0,10,15,0.46) 36%, rgba(0,10,15,0.54) 42%, rgba(0,10,15,0.67) 51%, rgba(0,10,15,0.77) 59%, rgba(0,10,15,0.8) 61%, rgba(0,10,15,0.98) 74%, rgba(0,10,15,0.98) 79%, rgba(0,10,15,0.98) 95%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(0,10,15,0.46) 28%, rgba(0,10,15,0.46) 31%, rgba(0,10,15,0.46) 35%, rgba(0,10,15,0.46) 36%, rgba(0,10,15,0.54) 42%, rgba(0,10,15,0.67) 51%, rgba(0,10,15,0.77) 59%, rgba(0,10,15,0.8) 61%, rgba(0,10,15,0.98) 74%, rgba(0,10,15,0.98) 79%, rgba(0,10,15,0.98) 95%);
+background: radial-gradient(ellipse at center, rgba(0,10,15,0.46) 28%, rgba(0,10,15,0.46) 31%, rgba(0,10,15,0.46) 35%, rgba(0,10,15,0.46) 36%, rgba(0,10,15,0.54) 42%, rgba(0,10,15,0.67) 51%, rgba(0,10,15,0.77) 59%, rgba(0,10,15,0.8) 61%, rgba(0,10,15,0.98) 74%, rgba(0,10,15,0.98) 79%, rgba(0,10,15,0.98) 95%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000a0f', endColorstr='#000a0f', GradientType=1 );
+	
+	
+	/*
+	
+	
+	
+	background: rgb(0,11,17);
+	background: radial-gradient(circle, rgba(0,11,17,0.11808473389355745) 6%, rgba(0,11,17,0.8267682072829132) 48%, rgba(0,11,17,1) 60%);
+	*/
+}
+.banner .cont{
+	margin-bottom: 6%;
+}
+.banner .cont h1{
+	font-family: 'dyxer';
+	font-size: 150px;
+	color: #fff;
+	letter-spacing: -5px;
+	margin-bottom: 0;
+}
+.banner .cont h2{
+	font-family: 'team';
+	font-size: 34px;
+	color: #fff;
+	letter-spacing: 1px;
+	display: inline-block;
+    background: #000;
+    padding: 1px 5px;
+	position: relative;
+    top: -12px;
+}
+.banner .cont img{
+	height: 160px;
+}
+.banner .cont p{
+	font-size: 36px;
+	color: #fff;
+	font-weight: 300;
+	margin-top: 50px;
 }
 
-.banner h1{
-	text-align:center;
+
+.information{
+	width: 100%;
+	min-height: 500px;
+	display: flex;
+	padding-top: 100px;
+}
+.information .cont p{
+	text-align: center;
+    color: #fff;
+    font-weight: 400;
+    line-height: 35px;
+    padding-right: 20%;
+    padding-left: 20%;
+    font-size: 18px;
+	margin-bottom: 100px;
+}
+
+.information .cont .sponsor{
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+}
+
+.information .cont .sponsor a:link{
+	text-decoration: none;
+}
+.information .cont .sponsor .agi h5{
+	font-family: 'agi';
+	font-size: 100px;
+	color: #fff;
+}
+.information .cont .sponsor .agi h5 span{
+	color: #00f6ff;
+}
+.information .cont .sponsor .betas h5{
+	font-family: 'betas';
+	font-size: 70px;
+	color: #fff;
+}
+.information .cont .sponsor .betas h5 span{
+	color: #ff0000;
+}
+.information .cont .sponsor .seeker h5{
+	font-family: 'Lato', sans-serif;
+	font-size: 85px;
+	color: #fff;
+}
+.information .cont .sponsor .seeker h5 span{
+	color: #f6ff01;
 }
 
 
-/* contenedores  */
-
-.contenido{
-	width:100%;
-	height:auto;
+.solicitud{
+	width: 100%;
+	min-height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.solicitud a:link{
+	font-size: 24px;
+	font-weight: 700;
+	color: #fff;
+	text-decoration: none;
+	border: 4px solid transparent;
+	-moz-border-image: -moz-linear-gradient(left, #00f6ff 0%, #ed008a 100%);
+	-webkit-border-image: -webkit-linear-gradient(left, #00f6ff 0%, #ed008a 100%);
+	border-image: linear-gradient(to right, #00f6ff 0%, #ed008a 100%);
+	border-image-slice: 1;
+	padding: 20px 90px;
+	
 }
 
-.q-es{
-	background:#0C6;
+footer{
+	text-align: center;
+	padding: 40px 0px;
 }
-
-
-.unete{
-	background: url(../images/wall.jpg) no-repeat center center;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+footer p{
+	font-size: 14px;
+	font-weight: 300;
+	color: #fff;
 }
