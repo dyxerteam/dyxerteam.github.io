@@ -37,10 +37,8 @@ body{
 	height: 100vh;
 	background: url(../images/ban.jpg) no-repeat center 40%;
 	background-size: cover;
-	display: flex;
-	align-items: flex-end;
-	align-content: center;
 	text-align: center;
+	position: relative;
 }
 .banner:before{
 	content: "";
@@ -70,7 +68,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000a0f', end
 	*/
 }
 .banner .cont{
-	margin-bottom: 6%;
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	bottom: 100px;
+
 }
 .banner .cont h1{
 	font-family: 'dyxer';
@@ -94,10 +97,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000a0f', end
 	height: 160px;
 }
 .banner .cont p{
-	font-size: 36px;
+	font-size: 24px;
 	color: #fff;
 	font-weight: 300;
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 
@@ -166,7 +169,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000a0f', end
 	font-weight: 700;
 	color: #fff;
 	text-decoration: none;
-	border: 4px solid transparent;
+	border: 2px solid transparent;
 	-moz-border-image: -moz-linear-gradient(left, #00f6ff 0%, #ed008a 100%);
 	-webkit-border-image: -webkit-linear-gradient(left, #00f6ff 0%, #ed008a 100%);
 	border-image: linear-gradient(to right, #00f6ff 0%, #ed008a 100%);
@@ -183,4 +186,90 @@ footer p{
 	font-size: 14px;
 	font-weight: 300;
 	color: #fff;
+}
+
+
+
+
+/* -------------------- responsive -------------------*/
+
+
+@media screen and (max-width: 991px) {
+	
+	
+	.information .cont p{
+		padding-right: 10%;
+		padding-left: 10%;
+	}
+	
+	/* sponsors */
+	
+	.information .cont .sponsor .agi h5{
+		font-size: 70px;
+	}
+	.information .cont .sponsor .betas h5{
+		font-size: 50px;
+	}
+	.information .cont .sponsor .seeker h5{
+		font-size: 60px;
+	}
+	
+	
+}
+
+
+@media screen and (max-width: 767px){
+	
+	.banner .cont p{
+		font-size: 24px;
+	}
+	
+	.information{
+		padding-top: 0px;
+	}
+	
+	.information .cont p{
+		margin-bottom: 50px;
+	}
+	.information .cont .sponsor{
+		align-items: center;
+		flex-direction: column;
+	}
+	
+	.information .cont .sponsor .power:nth-of-type(2n){
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	
+	
+	.solicitud a:link{
+		font-size: 18px;
+	}
+	
+	
+}
+
+@media screen and (max-width: 384px){
+	.banner .cont h1{
+		font-size: 100px;
+	}
+	.banner .cont h2{
+		font-size: 24px;
+	}
+	.banner .cont p{
+		font-size: 16px;
+	}
+	
+	.information .cont p{
+		font-size: 16px;
+	}
+	.solicitud a:link{
+		padding: 15px 40px;
+	}
+	
+	footer p{
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	
 }
