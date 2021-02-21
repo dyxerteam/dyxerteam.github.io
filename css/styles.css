@@ -218,9 +218,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000a0f', end
 	
 	
 }
-.solicitud a:hover{
+.solicitud a:visited{
 	
-	
+	color: var(--ctext1);
 	
 	
 }
