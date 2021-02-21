@@ -1,7 +1,7 @@
 
 :root{
 	--cpri: #000a0f;
-	--csec: #011017;
+	--csec: #001722;
 	--ctext1: #fff;
 	--ctext2: #737373;
 	--cblue: #00f6ff;
@@ -75,7 +75,7 @@ a{
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	
 	
 background: rgba(0,10,15,0.46);
@@ -158,6 +158,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000a0f', end
 
 .information .cont .sponsor a:link{
 	text-decoration: none;
+	outline: none;
 }
 .information .cont .sponsor .agi h5{
 	font-family: 'agi';
@@ -231,7 +232,7 @@ footer{
 	padding: 40px 0px;
 }
 footer p{
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 300;
 	color: var(--ctext1);
 }
@@ -245,7 +246,9 @@ footer p{
 
 
 .banner-agi{
-	background: url(../images/banner2_op.jpg) no-repeat center bottom;
+	background: url(../images/banner2.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
 	background-size: cover;
 	text-align: center;
 	position: relative;
@@ -256,7 +259,7 @@ footer p{
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	background: rgba(0,10,15,0.52);
 background: -moz-radial-gradient(center, ellipse cover, rgba(0,10,15,0.52) 16%, rgba(0,10,15,0.52) 31%, rgba(0,10,15,0.63) 40%, rgba(0,10,15,1) 70%);
 background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(16%, rgba(0,10,15,0.52)), color-stop(31%, rgba(0,10,15,0.52)), color-stop(40%, rgba(0,10,15,0.63)), color-stop(70%, rgba(0,10,15,1)));
@@ -288,7 +291,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000a0f', end
 	font-family: 'agi';
 	font-size: 160px;
 	color: var(--ctext1);
-	letter-spacing: -5px;
 	margin-bottom: 0;
 }
 .banner-agi .cont h1 span{
@@ -313,8 +315,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000a0f', end
     color: var(--ctext2);
     font-weight: 400;
     line-height: 35px;
-    padding-right: 5%;
-    padding-left: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
     font-size: 16px;
 }
 
@@ -339,15 +341,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000a0f', end
 .proyects{
 	display: flex;
 	justify-content: center;
-	padding-bottom: 200px;
+	padding-bottom: 60px;
 }
 .proyects a{
 	width: 730px;
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
-	border-radius: 10px;
-	background: var(--csec);
 	display: flex;
 	padding-top: 45px;
 	padding-right: 45px;
@@ -356,7 +356,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000a0f', end
 	align-items: center;
 	text-decoration: none;
 	margin-bottom: 40px;
-	border: 2px solid transparent;
+	border-bottom: 3px solid var(--csec);
+	outline: none;
+	
 }
 
 .proyects a img{
@@ -369,15 +371,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000a0f', end
 	font-weight: 700;
 	font-size: 24px;
 	color: var(--ctext1);
+	margin-bottom: 0px;
 }
 .proyects a p{
 	font-size: 14px;
 	font-weight: 400;
 	color: var(--ctext2);
 	line-height: 30px;
-	
+	margin-bottom: 0px;
 }
 
+.proyects a:hover{
+	background: var(--csec);
+	
+}
+/*
 .proyects a:hover{
 	border: 2px solid transparent;
 	-moz-border-image: -moz-linear-gradient(left, var(--cblue) 0%, var(--cpink) 100%);
@@ -388,7 +396,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000a0f', end
 }
 
 
-
+*/
 
 
 
@@ -503,7 +511,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000a0f', end
 .banner-seeker .cont h1{
 	font-size: 120px;
 	color: var(--ctext1);
-	letter-spacing: -5px;
 	margin-bottom: 50px;
 	
 }
@@ -582,6 +589,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000a0f', end
 	}
 	
 	
+	
+	/* seccion pages --- proyectos (tarjetas) */
+	.proyects a{
+		width: auto;
+		background: var(--csec);
+		border-radius: 10px;
+	}
+	
 }
 
 
@@ -614,7 +629,107 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000a0f', end
 	}
 	
 	
+	
+	.banner-agi .cont h1{
+	
+		font-size: 100px;
+	
+	}
+	.banner-agi .cont p{
+		font-size: 18px;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	
+	
+	.banner-betas .cont h1{
+		font-size: 70px;
+	}
+	.banner-betas .cont p {
+		font-size: 18px;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	
+	
+	
+	.banner-seeker .cont h1{
+		font-size: 70px;
+		margin-bottom: 25px;
+	}
+	.banner-seeker .cont p {
+		font-size: 16px;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	
+	
+	
+	
+	/* seccion pages --- proyectos */
+	
+	.proyects h3 {
+    	font-size: 75px;
+	}
+	
+	.proyects a {
+		padding-top: 20px;
+		padding-right: 20px;
+		padding-bottom: 20px;
+		padding-left: 20px;
+	}
+	
+	
+	
 }
+
+@media screen and (max-width: 575px){
+	
+	
+	
+	
+	
+	.information-pages{
+		padding-top: 0px;
+		padding-bottom: 100px;
+	}
+	.information-pages .cont p{
+		margin-right: 10%;
+		margin-left: 10%;
+		font-size: 14px;
+	}
+	
+	
+	.proyects a{
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	.proyects a .text {
+		margin-left: 20px;
+	}
+	.proyects a img {
+    	height: 50px;
+	}
+	.proyects a .text h5 {
+    
+    	font-size: 18px;
+	}
+	
+	.proyects a p {
+    	font-size: 12px;
+	}
+	
+	
+}
+
+
+@media screen and (max-width: 490px){
+	.proyects h3 {
+		font-size: 48px;
+	}
+}
+
+
 
 @media screen and (max-width: 384px){
 	.banner .cont h1{
@@ -639,4 +754,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000a0f', end
 		margin-right: 5%;
 	}
 	
+	.banner-betas .cont h1{
+		font-size: 48px;
+	}
+	
+	.banner-seeker .cont h1 {
+    font-size: 50px;
+}
+	
+	.proyects a p{
+		display: none;
+	}
+	
+	
+	
+}
+
+@media screen and (max-width: 348px){
+	.proyects h3 {
+		font-size: 32px;
+	}
 }
