@@ -407,13 +407,15 @@ p.copy{
 		padding-left: 5%;
 	}
 	.content.est img.icon {
-    	width: 50px;
+    	width: 40px;
 	}
 	.content.est h5{
 		font-size: 24px;
+		margin: 20px 0px 20px 0px;
+
 	}
 	.content.est p{
-		font-size: 14px;
+		font-size: 13px;
 	}
 	.content.est ul li{
 		font-size: 12px;
